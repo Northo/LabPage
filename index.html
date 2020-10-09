@@ -2,57 +2,95 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <style>
-         body, html {
-             height: 100%;
+         .flex-container {
+             display: flex;
+             flex-wrap: wrap;
+             padding-top: 80px;
          }
 
-         #wrapper {
-             width: 75%;
+         .flex-center {
+             justify-content: center;
+         }
+
+         .flex-even {
+             justify-content: space-evenly;
+         }
+
+         .badge {
+             text-align: center;
+             width: 200px;
+             margin: 0 20px;
+             display: inline-block;
+         }
+
+         .badge__circle {
+             height: 70px;
+             width: 70px;
+             line-height: 70px;
+             border-radius: 50%;
+             text-align: center;
              margin: 0 auto;
-             min-height: 75%;
+             margin-bottom: 8px;
+             display: block;
          }
 
-         .center {
-             width: 75%;
-             margin: 0 auto;
+         .badge__circle:hover {
+             transform: scale(1.1);
          }
 
+         .shadow {
+             box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+         }
         </style>
-
     </head>
     <body>
-        <div class="w3-padding">
-            <nav class="w3-bar w3-card w3-light-gray">
-                <a href="#" class="w3-bar-item w3-button">Hjem</a>
-                <a href="#" class="w3-bar-item w3-button">På labben</a>
-                <a href="#" class="w3-bar-item w3-button">Rapport</a>
-            </nav>
+        <nav class="w3-bar w3-dark-gray">
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-blue">Home</a>
+            <a href="forberedelse.html" class="w3-bar-item w3-button w3-mobile">Forberedelser</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">På labben</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Rapport</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Hjelp</a>
+        </nav>
 
-            <section class="w3-container w3-light-gray w3-margin">
-                <h1>Velkommen til fysikklabb!</h1>
-                <div class="w3-panel w3-pale-yellow w3-border w3-border-yellow w3-leftbar">
-                    <h2>Arbeidskrav!</h2>
-                    <ul class="w3-ul" style="width: 30%">
-                        <li><i class="material-icons w3-small">label_outline</i> Forberedelser før labben</li>
-                        <li><i class="material-icons w3-small">label_outline</i> På labben</li>
-                        <li><i class="material-icons w3-small">label_outline</i> Rapport etter labben</li>
-                    </ul>
-                </div>
-
-                <h2> Før labben er det viktig at du gjør det følgende:</h2>
-                <ol>
-                    <li>Last ned Tracker</li>
-                </ol>
-            </section>
-
-            <section class="w3-panel">
-fkj
-            </section>
-
-            <footer>
-            </footer>
+        <div class="w3-container w3-blue w3-center w3-card">
+            <h1>Velkommen til fysikklab!</h1>
+            <img src="assets/trondheim.svg" height="125px" class="w3-margin">
+            <img src="assets/gjovik.svg" height="125px" class="w3-margin">
+            <img src="assets/alesund.svg" height="125px" class="w3-margin">
         </div>
+
+        <div class="flex-container flex-center">
+            <div class="badge">
+                <a href="forberedelse.html" class="badge__circle shadow">
+                    Før
+                </a>
+                Før lab må du laste ned programmet Tracker.
+            </div>
+
+            <div class="badge">
+                <a href="#" class="badge__circle shadow">
+                    Under
+                </a>
+                Du <i>må</i> møte opp på lab!
+            </div>
+
+            <div class="badge">
+                <a href="#" class="badge__circle shadow">
+                    Etter
+                </a>
+                Etter labben skal du skrive en rapport.
+            </div>
+        </div><!-- Flex container -->
+
+        <section class="w3-container w3-panel w3-sand w3-margin w3-padding-32">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae justo facilisis, elementum arcu nec, posuere diam. Phasellus et sodales urna. Nulla lacinia elit tortor, sed blandit mauris pharetra euismod. Nulla diam tellus, commodo eu congue ac, molestie id nulla. Nulla at lorem sit amet neque hendrerit faucibus at non nibh. Etiam iaculis scelerisque orci, id mollis est pretium a. Proin dictum fermentum quam, eget ullamcorper sapien. Fusce elementum est nibh, eu dignissim lacus euismod vitae. Ut id arcu augue. Pellentesque tempus iaculis consectetur. Proin accumsan purus non ipsum iaculis, eget scelerisque eros aliquet. Integer cursus mauris a fermentum imperdiet. Pellentesque odio leo, tempus id orci sit amet, dapibus commodo ligula. Nunc fermentum sem risus, vitae dictum lacus vulputate a. Curabitur sit amet sodales arcu. Nunc venenatis dignissim dolor eu consectetur.</p>
+        </section>
+
+        <footer class="w3-container w3-dark-gray w3-bottom">
+            <p class="w3-left">Er noe uklart? Ta kontakt med: </p>
+            <img src="assets/inst_for_fysikk_hoeyde_white.svg" height="50px" class="w3-right w3-margin">
+        </footer>
     </body>
 </html>
