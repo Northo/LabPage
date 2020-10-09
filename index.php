@@ -9,21 +9,21 @@
 
         <div class="flex-container flex-center">
             <div class="badge">
-                <a href="forberedelse.html" class="badge__circle shadow">
+                <a href="forberedelse.phtml" class="badge__circle shadow">
                     Før
                 </a>
                 Før lab må du laste ned programmet Tracker.
             </div>
 
             <div class="badge">
-                <a href="#" class="badge__circle shadow">
+                <a href="lab.phtml" class="badge__circle shadow">
                     Under
                 </a>
                 Du <i>må</i> møte opp på lab!
             </div>
 
             <div class="badge">
-                <a href="#" class="badge__circle shadow">
+                <a href="rapport.phtml" class="badge__circle shadow">
                     Etter
                 </a>
                 Etter labben skal du skrive en rapport.
