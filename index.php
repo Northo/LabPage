@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="w3-bar w3-dark-gray">
-            <a href="#" class="w3-bar-item w3-button w3-mobile w3-blue">Home</a>
-            <a href="forberedelse.html" class="w3-bar-item w3-button w3-mobile">Forberedelser</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">På labben</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile">Rapport</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Hjelp</a>
-        </nav>
-
+<?php $activePage = "index.php"; ?>
+<?php include 'head.phtml'; ?>
         <div class="w3-container w3-blue w3-center w3-card">
             <h1>Velkommen til fysikklab!</h1>
             <img src="assets/trondheim.svg" height="125px" class="w3-margin">
@@ -48,10 +34,4 @@
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae justo facilisis, elementum arcu nec, posuere diam. Phasellus et sodales urna. Nulla lacinia elit tortor, sed blandit mauris pharetra euismod. Nulla diam tellus, commodo eu congue ac, molestie id nulla. Nulla at lorem sit amet neque hendrerit faucibus at non nibh. Etiam iaculis scelerisque orci, id mollis est pretium a. Proin dictum fermentum quam, eget ullamcorper sapien. Fusce elementum est nibh, eu dignissim lacus euismod vitae. Ut id arcu augue. Pellentesque tempus iaculis consectetur. Proin accumsan purus non ipsum iaculis, eget scelerisque eros aliquet. Integer cursus mauris a fermentum imperdiet. Pellentesque odio leo, tempus id orci sit amet, dapibus commodo ligula. Nunc fermentum sem risus, vitae dictum lacus vulputate a. Curabitur sit amet sodales arcu. Nunc venenatis dignissim dolor eu consectetur.</p>
         </section>
-
-        <footer class="w3-container w3-dark-gray w3-bottom">
-            <p class="w3-left">Er noe uklart? Ta kontakt med: </p>
-            <img src="assets/inst_for_fysikk_hoeyde_white.svg" height="50px" class="w3-right w3-margin">
-        </footer>
-    </body>
-</html>
+<?php include 'footer.phtml'; ?>

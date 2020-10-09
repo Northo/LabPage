@@ -1,0 +1,21 @@
+<!-- Expects $activePage to be set, which is one of the keys in $urls defined in this document. -->
+<nav class="w3-bar w3-dark-gray">
+    <?php
+    $urls = array (
+        'Home' => 'index.php',
+        'Forberedelser' => 'forberedelse.phtml',
+ 	'På labben' => 'lab.phtml',
+    	'Rapport' => 'rapport.phtml'
+    );
+
+    foreach ($urls as $name=> $url) {
+	    echo '<a href="', $url, '" class="w3-bar-item w3-button w3-mobile', (($activePage == $url) ? ' w3-blue' : ''), '">', $name, "</a>\n";
+    }
+/*
+    foreach ($urls as $name=>$url) {
+    print '<a href="index.html" class="w3-bar-item w3-button w3-mobile'(($activePage == $name) ? 'w3-blue' : '').'">Home</a>';
+    }
+ */
+    ?>
+    <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Hjelp</a>
+</nav>
