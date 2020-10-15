@@ -14,22 +14,13 @@
     </div>
 </section>
 
-<section class="w3-center">
-    <h2>Ressurser:</h2>
-    <div class="flex-container flex-center">
-        <div class="badge">
-            <a href="forberedelse.phtml" class="badge__circle shadow">
-		Mal
-            </a>
-	    Rapporten skal følge denne malen
-        </div>
-        <div class="badge">
-            <a href="forberedelse.phtml" class="badge__circle shadow">
-		Sjekkliste
-            </a>
-	    Sjekklisten for godkjent rapport
-        </div>
-    </div>
-</section>
+
+<?php
+$resources = array(
+    "Mal" => ["Rapporten skal følge denne malen", "dummy_link"],
+    "Sjekkliste" => ["Sjekkliste for godkjent rapport", "dummy_link"]
+);
+include('resources.php');
+?>
 <?php include 'footer.phtml'; ?>
 

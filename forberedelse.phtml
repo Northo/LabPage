@@ -25,36 +25,13 @@
     <h2><i class="material-icons w3-xxlarge">announcement</i> Les gjennom labheftet <i>før</i> labben</h2>
 </section>
 
-<section class="w3-center">
-    <h2>Ressurser:</h2>
-    <div class="flex-container flex-center">
-	<div class="badge">
-	    <a href="forberedelse.phtml" class="badge__circle shadow">
-		Labhefte
-	    </a>
-	    Labheftet beskriver hva du skal gjøre på labben
-	</div>
-	
-	<div class="badge">
-	    <a href="https://youtu.be/n4Eqy60yYUY" class="badge__circle shadow" target="_blank">
-		Video
-	    </a>
-	    Kort (2m30s) YouTube-video som beskriver bruken av Tracker
-	</div>
-
-	<div class="badge">
-	    <a href="https://youtu.be/La3H7JywgX0" class="badge__circle shadow" target="_blank">
-		Video II
-	    </a>
-	    Ganske kort (15m) YouTube-video som beskriver bruken av Tracker
-	</div>
-
-	<div class="badge">
-	    <a href="https://www.youtube.com/watch?v=K-Fc08X56R0" class="badge__circle shadow" target="_blank">
-		Video III
-	    </a>
-	    Video som raskt viser eksperimentet dere skal gjøre
-	</div>
-    </div>
-</section>
+<?php
+$resources = array(
+    "Labhefte" => ["Labheftet beskriver hva du skal gjøre på labben", "dummy_link"],
+    "Video" => ["Kort (2m30s) YouTube-video som beskriver bruken av Tracker", "https://youtu.be/n4Eqy60yYUY"],
+    "Video II" => ["Ganske kort (15m) YouTube-video som beskriver bruken av Tracker", "https://youtu.be/La3H7JywgX0"],
+    "Video III" => ["Video som raskt viser eksperimentet dere skal gjøre", "https://www.youtube.com/watch?v=K-Fc08X56R0"]
+);
+include('resources.php');
+?>
 <?php include 'footer.phtml'; ?>
