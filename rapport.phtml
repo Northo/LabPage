@@ -1,4 +1,26 @@
 <?php $activePage = "rapport.phtml"; ?>
 <?php include 'head.phtml'; ?>
+<div class="w3-container w3-blue w3-center w3-card">
+    <h1>Innlevering av rapport</h1>
+</div>
+
+<section class="w3-container w3-padding-32 narrow">
+    Etter forøket skal det skrives en rapport for labben.
+    Rapporten skal følge malen som er lenket til under ressurser på denne siden.
+    Pass også på at dere oppfyller punkene i sjekklisten for godkjent labrapport.
+
+    <div class="w3-panel w3-red w3-leftbar">
+	Rapporten leveres på Blackboard!
+    </div>
+</section>
+
+
+<?php
+$resources = array(
+    "Mal" => ["Rapporten skal følge denne malen", "dummy_link"],
+    "Sjekkliste" => ["Sjekkliste for godkjent rapport", "dummy_link"]
+);
+include('resources.php');
+?>
 <?php include 'footer.phtml'; ?>
 

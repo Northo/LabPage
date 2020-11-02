@@ -1,3 +1,9 @@
+body {
+    color: #444;
+    font-size: 16px;
+    padding-bottom: 90px;  /* Account for height of footer */
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -32,6 +38,22 @@
 
 .badge__circle:hover {
     transform: scale(1.1);
+}
+
+.narrow {
+    width: max-content;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.crop_frame {
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.crop_frame img {
+    margin-top: -390px;
 }
 
 .shadow {
