@@ -9,7 +9,7 @@
 foreach ($resources as $key => $value) {
         print('
 	<div class="badge">
-            <a href="'.$value[1].'" class="badge__circle shadow">
+            <a href="'.$value[1].'" class="badge__circle shadow" target="_blank">
 		'.$key.'
             </a>
 	    '.$value[0].'

@@ -2,9 +2,6 @@
 <?php include 'head.phtml'; ?>
         <div class="w3-container w3-blue w3-center w3-card">
             <h1>Velkommen til fysikklab!</h1>
-            <img src="assets/trondheim.svg" height="125px" class="w3-margin">
-            <img src="assets/gjovik.svg" height="125px" class="w3-margin">
-            <img src="assets/alesund.svg" height="125px" class="w3-margin">
         </div>
 
         <div class="flex-container flex-center">
