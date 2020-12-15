@@ -5,6 +5,15 @@
 <h1>På lab</h1>
 </div>
 
+<section class="narrow w3-padding">
+    <h2>Gjøremål:</h2>
+        <ul class="w3-ul">
+        <li>Sett opp eksperimentet slik det er beskrevet i labheftet</li>
+        <li>Gjennomfør fem måleserier med hvert legeme</li>
+        </ul>
+</section>
+
+
 <section class="w3-container w3-panel w3-sand w3-padding-32 w3-margin-top w3-leftbar narrow">
 <h2>Hvor?</h2>
 
@@ -66,8 +75,14 @@ function updateLocation() {
 </label>
 </div>
 </section>
-
-
 </section>
+
+<?php
+$resources = array(
+    "Labhefte" => ["Labheftet beskriver hva du skal gjøre på labben", "dummy_link"],
+    "Oppsett" => ["Video som raskt viser eksperimentet dere skal gjøre", "assets/LabVideoHome.mp4"]
+);
+include('resources.php');
+?>
 <?php include 'footer.phtml'; ?>
 
