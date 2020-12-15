@@ -2,8 +2,10 @@
 <?php include 'head.phtml'; ?>
         <div class="w3-container w3-blue w3-center w3-card">
             <h1>Velkommen til fysikklab!</h1>
+	    <div class="crop_frame">
+	        <img src="assets/sample_image.jpg" class="w3-card" style="margin-top: -135px;">
+	    </div>
         </div>
-
         <div class="flex-container flex-center">
             <div class="badge">
                 <a href="forberedelse.phtml" class="badge__circle shadow">
