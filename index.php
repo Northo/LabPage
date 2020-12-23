@@ -6,7 +6,7 @@
 	        <img src="assets/sample_image.jpg" class="w3-card" style="margin-top: -135px;">
 	    </div>
         </div>
-
+        <div id="content-wrapper">
 
         <section class="w3-container narrow w3-panel w3-margin-top w3-sand w3-leftbar w3-padding-32">
                  <h2>Fysikklab i IFYKJG1000/IFYKJG1001</h2>
@@ -38,5 +38,5 @@ Her kan man ha en velkomsttekst.
                 Etter labben skal du skrive en rapport.
             </div>
         </div><!-- Flex container -->
-
+</div>  <!-- #content-wrapper -->
 <?php include 'footer.phtml'; ?>

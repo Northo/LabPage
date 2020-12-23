@@ -1,7 +1,24 @@
 body {
     color: #444;
     font-size: 16px;
-    padding-bottom: 90px;  /* Account for height of footer */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+body, html {
+    height: 100%;
+}
+
+#content-wrapper {
+    flex-grow: 1;
+    padding-bottom: 4px;
+    
+}
+
+nav {
+    flex-shrink: 0;
+    z-index: 100; /* Fix ugly shadow */
 }
 
 .flex-container {
