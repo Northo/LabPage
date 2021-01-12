@@ -3,7 +3,11 @@
 <!-- The array resoures should be on the form 'Name' => (description, link) -->
 
 <section class="w3-center">
-    <h2>Ressurser:</h2>
+    <?php
+    if (!$noTitleResources) { 
+    echo "<h2>Ressurser:</h2>";
+    }
+    ?>
     <div class="flex-container flex-center">
 <?php
 foreach ($resources as $key => $value) {

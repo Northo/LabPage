@@ -23,6 +23,7 @@ Her kan man ha en velkomsttekst.
     		"Under" => ["Du <i>må</i> møte opp på lab!", "lab.phtml"],
     		"Etter" => ["Etter labben skal du skrive en rapport.", "rapport.phtml"]
 	);
+	$noTitleResources = true;
 	include('resources.php');
 	?>
 </div>  <!-- #content-wrapper -->
