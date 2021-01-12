@@ -16,27 +16,14 @@ Her kan man ha en velkomsttekst.
 </p>
                                                                                                                     <i class="material-icons w3-xxlarge">announcement</i> Gjør alle forberedelsene før du kommer på lab!
         </section>
-        <div class="flex-container flex-center">
-            <div class="badge">
-                <a href="forberedelse.phtml" class="badge__circle shadow">
-                    Før
-                </a>
-                Før lab må du laste ned programmet Tracker.
-            </div>
 
-            <div class="badge">
-                <a href="lab.phtml" class="badge__circle shadow">
-                    Under
-                </a>
-                Du <i>må</i> møte opp på lab!
-            </div>
-
-            <div class="badge">
-                <a href="rapport.phtml" class="badge__circle shadow">
-                    Etter
-                </a>
-                Etter labben skal du skrive en rapport.
-            </div>
-        </div><!-- Flex container -->
+	<?php
+	$resources = array(
+    		"Før" => ["Før lab må du laste ned programmet Tracker.", "forberedelser.phtml"],
+    		"Under" => ["Du <i>må</i> møte opp på lab!", "lab.phtml"],
+    		"Etter" => ["Etter labben skal du skrive en rapport.", "rapport.phtml"]
+	);
+	include('resources.php');
+	?>
 </div>  <!-- #content-wrapper -->
 <?php include 'footer.phtml'; ?>
